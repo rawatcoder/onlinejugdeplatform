@@ -1,0 +1,30 @@
+version = 1
+
+[[analyzers]]
+name = "python"
+enabled = true
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  ecma_version = "2020"
+  module_system = "commonjs"
+  environment = [
+    "mongo",
+    "mocha",
+    "browser",
+    "jasmine",
+    "jest",
+    "jquery",
+    "nodejs"
+  ]
+  plugins = ["react"]
